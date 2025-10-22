@@ -1,0 +1,478 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #000000;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  overflow-x: hidden;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+}
+
+section {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+main section.view1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 6rem 4rem 32rem;
+  position: relative;
+  width: 100%;
+  background-image: url(line-waves.gif);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  opacity: 0.7;
+}
+main section.view1 h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  color: transparent;
+  background: linear-gradient(-55deg, #e8d3be 40%, #458aed);
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-weight: 400;
+  opacity: 1;
+}
+main section.view1 p {
+  color: rgb(226, 225, 225);
+  text-align: center;
+  font-size: 1.1rem;
+  opacity: 1;
+}
+main section.view1 button {
+  padding: 0.7rem 2rem;
+  background-color: transparent;
+  border: 1px solid rgb(219, 219, 219);
+  color: rgb(226, 225, 225);
+  border-radius: 2rem;
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  opacity: 1;
+}
+main section.view1 button:hover {
+  background: linear-gradient(transparent 50%, rgba(204, 204, 204, 0.855));
+}
+main section.view2 {
+  width: 100%;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.view2 h1 {
+  color: #e2e1e1;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 400;
+}
+main section.view2 h1 span {
+  background: linear-gradient(55deg, #e8d3be, #eca486);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main section.view2 p {
+  color: #e2e1e1;
+  text-align: center;
+  opacity: 0.4;
+}
+main section.view2 .element {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+main section.view2 .element .top img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid #e2e1e1;
+  border-radius: 2rem;
+}
+main section.view2 .element .bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.view2 .element .bottom .details {
+  display: flex;
+}
+main section.view2 .element .bottom .details .right {
+  padding: 0rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+main section.view2 .element .bottom .details .right h2 {
+  color: #e2e1e1;
+}
+main section.view2 .element .bottom .details .right p {
+  text-align: left;
+}
+main section.view3 {
+  width: 100%;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+  align-items: center;
+}
+main section.view3 h1 {
+  color: #e2e1e1;
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+main section.view3 h1 span {
+  background: linear-gradient(55deg, #e8d3be, #eca486);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main section.view3 p {
+  color: #e2e1e1;
+  text-align: center;
+  opacity: 0.4;
+}
+main section.view3 button {
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #000000;
+  border: 1px solid #e2e1e1;
+  color: #e2e1e1;
+  font-size: 1rem;
+}
+main section.view4 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 3rem 1.5rem;
+}
+main section.view4 .element {
+  padding: 1.5rem;
+  border: 1px solid rgba(226, 225, 225, 0.2117647059);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-image: url(view4.jpg);
+  background-position: 60%;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+}
+main section.view4 .element .top {
+  background-image: url(view4_1.2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  aspect-ratio: 1/1;
+  padding: 1rem;
+}
+main section.view4 .element .top .img2 {
+  background-image: url(view4_1.1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  aspect-ratio: 1/1;
+}
+main section.view4 .element .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 100%;
+}
+main section.view4 .element .bottom h1 {
+  color: #e2e1e1;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+main section.view4 .element .bottom h1 span {
+  background: linear-gradient(55deg, #e8d3be, #eca486);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main section.view4 .element .bottom p {
+  color: #e2e1e1;
+  opacity: 0.4;
+  width: 60%;
+  font-size: 1.3rem;
+}
+main section.view4 .element .bottom button {
+  padding: 0.7rem 2rem;
+  border-radius: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: #000000;
+  border: 1px solid #e2e1e1;
+  color: #e2e1e1;
+  font-size: 1rem;
+}
+main section.view4 .element:nth-child(3) .top {
+  background-image: url(view4.jpg);
+}
+main section.view4 .element:nth-child(3) .top img {
+  background-image: none;
+}
+main section.view5 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  padding: 3rem 1.5rem;
+  text-align: center;
+  align-items: center;
+}
+main section.view5 h1 {
+  color: #e2e1e1;
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+main section.view5 h1 span {
+  background: linear-gradient(55deg, #e8d3be, #eca486);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+main section.view5 p {
+  color: #e2e1e1;
+  text-align: center;
+  opacity: 0.4;
+}
+main section.view5 .image {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+main section.view5 .image img {
+  border: 1px solid rgba(226, 225, 225, 0.2117647059);
+  border-radius: 2rem;
+}
+main section.view6 {
+  width: 100%;
+  padding: 3rem 1.5rem;
+}
+main section.view6 .element {
+  border: 1px solid rgba(226, 225, 225, 0.2117647059);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  border-radius: 1rem;
+  padding: 3rem;
+  background: linear-gradient(black 40%, rgba(255, 165, 0, 0.431372549));
+}
+main section.view6 .element p {
+  color: #e2e1e1;
+  text-align: center;
+  font-weight: 500;
+}
+main section.view6 .element .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.view6 .element .text p {
+  font-size: 1rem;
+  color: #e2e1e1;
+  opacity: 0.4;
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  color: white;
+  padding: 3rem 0rem 0rem 0rem;
+}
+footer .semi-circle {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: center;
+  box-shadow: 0px 0px 50px 0px orange;
+  width: 100%;
+  height: 350px;
+  border-radius: 70% 70% 0% 0%/15% 15% 0% 0%;
+}
+footer .semi-circle .element {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  padding: 1rem;
+}
+footer .semi-circle .element .top {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer .semi-circle .element .bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .semi-circle .element .bottom .logo {
+  display: flex;
+  align-items: center;
+}
+footer .semi-circle .element .bottom .contact {
+  font-size: 1rem;
+}
+footer .semi-circle .copyright {
+  text-align: center;
+  font-size: 0.7rem;
+  color: rgba(226, 225, 225, 0.4392156863);
+  border-top: 1px solid #e2e1e1;
+  padding: 0.5rem;
+}
+
+@media (min-width: 900px) {
+  main section.view1 {
+    width: 100%;
+    background-size: cover;
+  }
+  main section.view1 h1 {
+    font-size: 10rem;
+  }
+  main section.view1 p {
+    width: 20%;
+    font-size: 1rem;
+  }
+  main section.view1 button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+  main section.view2 {
+    padding: 5.5rem;
+    gap: 3rem;
+  }
+  main section.view2 .element {
+    flex-direction: row;
+  }
+  main section.view2 .element .top {
+    width: 50%;
+  }
+  main section.view2 .element .bottom {
+    width: 50%;
+    gap: 2.8rem;
+  }
+  main section.view3 {
+    padding: 5.5rem;
+    gap: 3rem;
+  }
+  main section.view3 h1 {
+    width: 50%;
+  }
+  main section.view3 p {
+    font-size: 1rem;
+  }
+  main section.view3 button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  main section.view4 {
+    padding: 5.5rem;
+  }
+  main section.view4 .element {
+    flex-direction: row-reverse;
+    background-position: 100%;
+    padding: 1.5rem 3.5rem;
+    gap: 4rem;
+  }
+  main section.view4 .element .top {
+    width: 60%;
+  }
+  main section.view4 .element .top .img2 {
+    padding: 0.5rem;
+  }
+  main section.view4 .element .bottom {
+    justify-content: space-evenly;
+    gap: 0rem;
+    width: 40%;
+  }
+  main section.view4 .element:nth-child(2) {
+    flex-direction: row;
+  }
+  main section.view5 {
+    gap: 3rem;
+    padding: 5.5rem;
+  }
+  main section.view5 p {
+    width: 21%;
+  }
+  main section.view5 .image {
+    flex-direction: row;
+    padding: 2rem;
+    gap: 2rem;
+  }
+  main section.view5 .image img {
+    width: 50%;
+  }
+  main section.view6 {
+    padding: 5.5rem;
+  }
+  main section.view6 .element {
+    padding: 5rem;
+  }
+  main section.view6 p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 75%;
+  }
+  footer {
+    width: 100%;
+  }
+  footer .semi-circle {
+    border-radius: 75% 75% 0% 0%/65% 65% 0% 0%;
+  }
+  footer .semi-circle .element {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    padding: 1rem 8rem;
+    font-size: 1rem;
+  }
+  footer .semi-circle .element .top {
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    gap: 2rem;
+  }
+  footer .semi-circle .element .bottom {
+    width: 70%;
+    justify-content: space-between;
+  }
+  footer .semi-circle .copyright {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 2000px) {
+  footer .semi-circle .element {
+    padding: 1rem 25rem;
+  }
+}/*# sourceMappingURL=style.css.map */
